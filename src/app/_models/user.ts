@@ -6,8 +6,8 @@ export class User {
   firstName!: string;
   lastName!: string;
   email!: string;
-  phonenumber!: number;
+  phonenumber!: string;
   company!: string;
-  dob!: Date;
+  dob!: string;
   isDeleting: boolean = false;
 }

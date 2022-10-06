@@ -91,6 +91,9 @@
     <div class="form-group col-2">
       <label>Gender</label>
     </div>
+    <div *ngIf="submitted && f.gender.errors" class="invalid-feedback">
+    <div *ngIf="f.gender.errors.required">Gender is required</div>
+   </div>
     <div class="form-group col-1">
       <input
         id="male"
